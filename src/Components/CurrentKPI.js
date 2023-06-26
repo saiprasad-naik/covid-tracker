@@ -3,7 +3,7 @@ import axios from "axios";
 import FiguresCards from "./FiguresCards";
 import "./CurrentKPI.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faVirusCovid } from "@fortawesome/free-solid-svg-icons";
+import { faVirusCovid , faShieldVirus, faBedPulse, faBookSkull} from "@fortawesome/free-solid-svg-icons";
 
 export default function CurrentKPI() {
   const [data, setData] = useState([]);
@@ -32,13 +32,15 @@ export default function CurrentKPI() {
       <div className="current-kpi-cards">
         {data.length > 0}
 
-        <FiguresCards cardHeading="Positive" data={data[0]?.positive} />
-        <FiguresCards cardHeading="Negative" data={data[0]?.negative} />
+        <FiguresCards cardHeading="Positive" icon={faVirusCovid} data={data[0]?.positive} />
+        <FiguresCards cardHeading="Negative" icon={faShieldVirus} data={data[0]?.negative} />
         <FiguresCards
           cardHeading="Currently Hospitalized"
+          icon={faBedPulse}
+
           data={data[0]?.hospitalizedCurrently}
         />
-        <FiguresCards cardHeading="Death" data={data[0]?.death} />
+        <FiguresCards cardHeading="Death" icon={faBookSkull} data={data[0]?.death} />
       </div>
     </div>
   );

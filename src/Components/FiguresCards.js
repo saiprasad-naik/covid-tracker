@@ -3,13 +3,12 @@ import React from "react";
 import "./FigureCards.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faVirusCovid } from "@fortawesome/free-solid-svg-icons";
 
 export default function FiguresCards(props) {
   return (
     <div className="card">
       <div className="card-icon">
-        <FontAwesomeIcon icon={faVirusCovid}/>
+        <FontAwesomeIcon icon={props.icon}/>
       </div>
 
       <div className="card-contents">

@@ -1,11 +1,13 @@
 .tableArea-cont{
-    width:85vw;
-    margin-left: 15vw;
-    padding: 2em 2em 2em 2em;
+    border-radius: 15px;
+    margin: 0vw 2vw 3vw 17vw;
+    padding: 2em;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 2em;;
+    background-color: white;
+    box-shadow: #949bb4 0px 10px 15px -3px, #949bb4 0px 4px 6px -2px;
 }
 
 .cont-heading .heading-underline{
