@@ -1,0 +1,8 @@
+.navbar{
+    background-color: white;
+    width: 85vw;
+    margin-left: 15vw;
+    height: 8vh;
+    position: fixed;
+    top: 0;
+}

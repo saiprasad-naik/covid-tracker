@@ -1,0 +1,14 @@
+.current-kpi-cont{
+    width:85vw;
+    margin-left: 15vw;
+    padding: 6em 2em 2em 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;;
+}
+
+.current-kpi-cards{
+    display: flex;
+    gap: 1em;
+}

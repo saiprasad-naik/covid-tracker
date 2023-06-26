@@ -1,0 +1,21 @@
+.card{
+    background-color:#303F70 ;
+    width: 18vw;
+    padding: 1.5em;
+    border-radius: 10px;
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.card-heading{
+    color: white;
+}
+
+.card-content{
+    color: #DBDFEA;
+    display: flex;
+    gap: 1em;
+}
