@@ -57,3 +57,9 @@
   .table-row:nth-child(odd) {
     background-color: #ffffff; /* Set the background color for odd rows */
   }
+
+  .state-name{
+    font-weight: bold;
+    color: #303F70;
+    cursor: pointer;
+  }

@@ -1,11 +1,14 @@
 .card{
-    background-color:#303F70 ;
+    /* background-color:#303F70 ; */
     width: 100%;
     padding: 1em;
     gap: 1em;
     border-radius: 10px;
     display: flex;
     transition: transform 0.3s ease;
+    background: linear-gradient(23deg, rgba(48, 63, 112, 1)
+    45%, rgb(173, 182, 242) 100%);
+
 }
 
 .card:hover {

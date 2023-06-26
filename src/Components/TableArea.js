@@ -20,7 +20,6 @@ export default function TableArea() {
     }
   };
 
-
   return (
     <div className="tableArea-cont">
       <div className="cont-heading">
@@ -41,7 +40,7 @@ export default function TableArea() {
           <tbody>
             {data.map((item) => (
               <tr key={item.state} className="table-row">
-                <td>{item.state}</td>
+                <td className="state-name">{item.state}</td>
                 <td>{item.positive}</td>
                 <td>{item.negative}</td>
                 <td>{item.death}</td>
