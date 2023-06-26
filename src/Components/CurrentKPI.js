@@ -35,7 +35,7 @@ export default function CurrentKPI() {
       </div>
       <div className="current-kpi-cards">
        
-        <FiguresCards cardHeading="Positive" data={data.positive} />
+        <FiguresCards cardHeading="Positive" data={data[0].positive} />
         <FiguresCards cardHeading="Negative" />
         <FiguresCards cardHeading="Currently Hospitalized" />
         <FiguresCards cardHeading="Death" />
