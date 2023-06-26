@@ -1,0 +1,57 @@
+.tableArea-cont{
+    width:85vw;
+    margin-left: 15vw;
+    padding: 2em 2em 2em 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2em;;
+}
+
+.cont-heading .heading-underline{
+    height: 5px;
+    background-color: black;
+    width: 120px;
+    border-radius: 50px;
+}
+
+.cont-table{
+    width: 100%;
+}
+
+.cont-table table{
+    width: 100%;
+    background-color: white;
+    padding: 1em;
+    border-radius: 15px;
+}
+
+.cont-table table thead{
+    background-color: #303F70;
+    color: white;
+    padding: 1em;
+}
+
+.cont-table table thead th{
+    padding: 0.8em;
+}
+
+.cont-table table .first-header-cell{
+    border-top-left-radius: 15px;
+}
+
+.cont-table table .last-header-cell{
+    border-top-right-radius: 15px;
+}
+
+.cont-table table td{
+    padding: 0.8em;
+}
+
+.table-row:nth-child(even) {
+    background-color: #DBDFEA; /* Set the background color for even rows */
+  }
+  
+  .table-row:nth-child(odd) {
+    background-color: #ffffff; /* Set the background color for odd rows */
+  }

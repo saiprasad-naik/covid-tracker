@@ -3,6 +3,8 @@ import './App.css';
 import Navigation from './Components/Navigation';
 import Navbar from './Components/Navbar';
 import CurrentKPI from './Components/CurrentKPI';
+import DailyRise from './Components/DailyRise'
+import TableArea from './Components/TableArea';
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <Navigation/>
       <Navbar/>
       <CurrentKPI/>
+      <DailyRise/>
+      <TableArea/>
     </div>
   );
 }

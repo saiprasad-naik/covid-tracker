@@ -31,7 +31,7 @@ export default function Navigation() {
         </div>
       </div>
 
-      <div className="user-cont">
+      {/* <div className="user-cont">
         <div className="user-avatar">
           <img src="manpic.jpg" alt="" />
         </div>
@@ -39,7 +39,7 @@ export default function Navigation() {
           <p className="username">Umesh Nayar</p>
           <p className="useremail">umesh@example.com</p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
