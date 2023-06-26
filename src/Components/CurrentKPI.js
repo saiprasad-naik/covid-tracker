@@ -30,17 +30,15 @@ export default function CurrentKPI() {
         <div className="heading-underline"></div>
       </div>
       <div className="current-kpi-cards">
-        {data.length > 0 && (
-          <>
-            <FiguresCards cardHeading="Positive" data={data[0]?.positive} />
-            <FiguresCards cardHeading="Negative" data={data[0]?.negative} />
-            <FiguresCards
-              cardHeading="Currently Hospitalized"
-              data={data[0]?.hospitalizedCurrently}
-            />
-            <FiguresCards cardHeading="Death" data={data[0]?.death} />
-          </>
-        )}
+        {data.length > 0}
+
+        <FiguresCards cardHeading="Positive" data={data[0]?.positive} />
+        <FiguresCards cardHeading="Negative" data={data[0]?.negative} />
+        <FiguresCards
+          cardHeading="Currently Hospitalized"
+          data={data[0]?.hospitalizedCurrently}
+        />
+        <FiguresCards cardHeading="Death" data={data[0]?.death} />
       </div>
     </div>
   );
