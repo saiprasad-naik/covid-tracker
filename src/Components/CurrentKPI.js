@@ -9,23 +9,19 @@ export default function CurrentKPI() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    GetData();
+    getData();
   }, []);
 
-  const GetData = async () => {
+  const getData = async () => {
     try {
       const response = await axios.get(
         "https://api.covidtracking.com/v1/us/current.json"
-      ); // Replace with your API endpoint
+      );
       setData(response.data);
     } catch (error) {
       console.log(error);
     }
   };
-
-  if (!data) {
-    return <div>Loading...</div>;
-  }
 
   return (
     <div className="current-kpi-cont">
@@ -34,11 +30,17 @@ export default function CurrentKPI() {
         <div className="heading-underline"></div>
       </div>
       <div className="current-kpi-cards">
-       
-        <FiguresCards cardHeading="Positive" data={data[0].positive} />
-        <FiguresCards cardHeading="Negative" />
-        <FiguresCards cardHeading="Currently Hospitalized" />
-        <FiguresCards cardHeading="Death" />
+        {data.length > 0 && (
+          <>
+            <FiguresCards cardHeading="Positive" data={data[0]?.positive} />
+            <FiguresCards cardHeading="Negative" data={data[0]?.negative} />
+            <FiguresCards
+              cardHeading="Currently Hospitalized"
+              data={data[0]?.hospitalizedCurrently}
+            />
+            <FiguresCards cardHeading="Death" data={data[0]?.death} />
+          </>
+        )}
       </div>
     </div>
   );
