@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faHouse,
+  faGauge,
   faTriangleExclamation,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
@@ -10,15 +10,14 @@ import "./Navigation.css";
 export default function Navigation() {
   return (
     <div className="side-nav-cont">
-        
       <div className="app-nav-controls">
         <div className="app-heading">
           <h2>Covid-19</h2>
         </div>
         <div className="nav-items">
           <div className="single-nav-item">
-            <FontAwesomeIcon icon={faHouse} />
-            <p>Home</p>
+            <FontAwesomeIcon icon={faGauge} />
+            <p>Dashboard</p>
           </div>
           <div className="single-nav-item">
             <FontAwesomeIcon icon={faTriangleExclamation} />

@@ -1,30 +1,33 @@
 .card{
-    background-color:#303F70 ;
-    width: 18vw;
+    /* background-color:#303F70 ; */
+    width: 100%;
     padding: 1em;
     gap: 1em;
     border-radius: 10px;
     display: flex;
     transition: transform 0.3s ease;
+    background: linear-gradient(23deg, rgba(48, 63, 112, 1)
+    45%, rgb(173, 182, 242) 100%);
+
 }
 
 .card:hover {
   transform: scale(1.05);
 }
 
-.card-heading h3{
-    color: white;
+.card-heading h4{
+    color: #DBDFEA;
     text-align: left;
 }
 
 .card-icon{
-    color: white;
-    width: 25%;
+    color: #DBDFEA;
+    width: 20%;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .card-contents{
@@ -36,8 +39,9 @@
 }
 
 .card-main-content{
-    color: #DBDFEA;
+    color: white;
     display: flex;
+    font-size: 30px;
     gap: 1em;
     justify-content: flex-start;
 }

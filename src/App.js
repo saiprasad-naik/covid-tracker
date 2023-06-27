@@ -5,6 +5,8 @@ import Navbar from './Components/Navbar';
 import CurrentKPI from './Components/CurrentKPI';
 import DailyRise from './Components/DailyRise'
 import TableArea from './Components/TableArea';
+import About from './Components/About';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
