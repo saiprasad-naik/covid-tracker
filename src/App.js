@@ -6,6 +6,7 @@ import Dashboard from "./Components/Dashboard";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import StateDetails from "./Components/StateDetails";
 
+
 function App() {
   return (
     <div className="App">
