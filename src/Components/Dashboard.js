@@ -3,7 +3,7 @@ import CurrentKPI from "./CurrentKPI";
 import DailyRise from "./DailyRise";
 import TableArea from "./TableArea";
 import BarGraph from "./BarGraph";
-import HorizontalChart from "./BarGraph";
+import PieChart from "./PieChart";
 
 export default function Dashboard() {
   return (
@@ -12,6 +12,7 @@ export default function Dashboard() {
       <DailyRise />
       <TableArea />
       <BarGraph />
+      <PieChart />
     </div>
   );
 }
