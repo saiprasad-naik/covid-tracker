@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./TableArea.css";
+import { useNavigate } from "react-router-dom";
+import StateDetails from "./StateDetails";
 
 export default function TableArea() {
   const [data, setData] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     GetData();
@@ -18,6 +21,11 @@ export default function TableArea() {
     } catch (error) {
       console.log(error);
     }
+  };
+
+  const stateClickedHandler = (stateName) => {
+    console.log(stateName);
+    navigate(`StateDetails/${stateName}`);
   };
 
   return (
@@ -40,10 +48,15 @@ export default function TableArea() {
           <tbody>
             {data.map((item) => (
               <tr key={item.state} className="table-row">
-                <td className="state-name">{item.state}</td>
-                <td>{item.positive}</td>
-                <td>{item.negative}</td>
-                <td>{item.death}</td>
+                <td
+                  className="state-name-text"
+                  onClick={() => stateClickedHandler(item.state)}
+                >
+                  {item.state? item.state : "-"}
+                </td>
+                <td>{item.positive ? item.positive: "-"}</td>
+                <td>{item.negative ? item.negative : "-"}</td>
+                <td>{item.death ? item.death : "-"}</td>
                 {/* Add more table cells as needed */}
               </tr>
             ))}

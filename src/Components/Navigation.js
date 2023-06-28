@@ -6,6 +6,7 @@ import {
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Navigation.css";
+import {Link} from 'react-router-dom';
 
 export default function Navigation() {
   return (
@@ -14,20 +15,18 @@ export default function Navigation() {
         <div className="app-heading">
           <h2>Covid-19</h2>
         </div>
-        <div className="nav-items">
-          <div className="single-nav-item">
-            <FontAwesomeIcon icon={faGauge} />
-            <p>Dashboard</p>
-          </div>
-          <div className="single-nav-item">
-            <FontAwesomeIcon icon={faTriangleExclamation} />
-            <p>Alerts</p>
-          </div>
-          <div className="single-nav-item">
-            <FontAwesomeIcon icon={faPhone} />
-            <p>Contact US</p>
-          </div>
-        </div>
+        <ul className="nav-items">
+          <li className="single-nav-item">
+            <Link className="single-nav-item-link" to="/">
+              <FontAwesomeIcon icon={faGauge} /> Dashboard
+            </Link>
+          </li>
+          <li className="single-nav-item">
+            <Link className="single-nav-item-link" to="/About">
+            <FontAwesomeIcon icon={faTriangleExclamation} /> About
+            </Link>
+          </li>
+        </ul>
       </div>
 
       {/* <div className="user-cont">

@@ -1,0 +1,19 @@
+.state-figures-cont{
+    padding: 1em;
+    border-radius: 10px;
+    display: flex ;
+    flex-direction: column;
+    gap: 1em;
+    align-items: flex-start;
+    background-color: #F7F6FC;
+    /* box-shadow: #949bb4 0px 10px 15px -3px, #949bb4 0px 4px 6px -2px; */
+    width: 31%;
+}
+
+.state-figures-cont h4{
+    color: #22209F;
+}
+
+.state-figures-cont-figures{
+    font-size: 20px;
+}

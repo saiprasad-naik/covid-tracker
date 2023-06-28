@@ -7,7 +7,7 @@
     align-items: flex-start;
     gap: 2em;;
     background-color: white;
-    box-shadow: #949bb4 0px 10px 15px -3px, #949bb4 0px 4px 6px -2px;
+    /* box-shadow: #949bb4 0px 10px 15px -3px, #949bb4 0px 4px 6px -2px; */
 
 }
 
@@ -20,7 +20,7 @@
     align-items: flex-start;
     gap: 2em;;
     background-color: white;
-    box-shadow: #949bb4 0px 10px 15px -3px, #949bb4 0px 4px 6px -2px;
+    /* box-shadow: #949bb4 0px 10px 15px -3px, #949bb4 0px 4px 6px -2px; */
 }
 
 .cont-heading{

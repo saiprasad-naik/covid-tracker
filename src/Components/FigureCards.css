@@ -6,9 +6,9 @@
     border-radius: 10px;
     display: flex;
     transition: transform 0.3s ease;
-    background: linear-gradient(23deg, rgba(48, 63, 112, 1)
-    45%, rgb(173, 182, 242) 100%);
-
+    /* background: rgba(34, 32, 159, 1); */
+    background-color: #F7F6FC;
+    color: black;
 }
 
 .card:hover {
@@ -16,12 +16,11 @@
 }
 
 .card-heading h4{
-    color: #DBDFEA;
+    color: #22209F;
     text-align: left;
 }
 
 .card-icon{
-    color: #DBDFEA;
     width: 20%;
     border-radius: 10px;
     display: flex;
@@ -39,9 +38,8 @@
 }
 
 .card-main-content{
-    color: white;
     display: flex;
-    font-size: 30px;
+    font-size: 20px;
     gap: 1em;
     justify-content: flex-start;
 }

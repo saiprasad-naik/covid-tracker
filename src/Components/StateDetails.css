@@ -1,0 +1,109 @@
+.state-detail-cont{
+    border-radius: 15px;
+    margin: 13vh 2vw 3vw 17vw;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1em;;
+    background-color: white;
+}
+
+.state-detail-inner-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2em;
+}
+
+.state-detail-cont .left-content{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.state-name{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.state-name p{
+    font-size: 30px;
+}
+
+.state-figures{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-between;
+}
+
+.state-detail-cont .right-content{
+    border-radius: 15px;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+
+.pink-card{
+    background-color: #FFF7F8;
+    color: black;
+    width: 47%;
+    overflow: hidden;
+    text-align: left;
+    padding: 1em;
+    border-radius: 10px;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.green-card{
+    background-color: #ECFEE8;
+    color: black;
+    width: 47%;
+    overflow: hidden;
+    text-align: left;
+    padding: 1em;
+    border-radius: 10px;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blue-card{
+    background-color: #E8FEFC;
+    color: black;
+    width: 47%;
+    overflow: hidden;
+    text-align: left;
+    padding: 1em;
+    border-radius: 10px;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.purple-card{
+    overflow: hidden;
+    color: black;
+    width: 47%;
+    background-color: #EDE8FE;
+    text-align: left;
+    padding: 1em;
+    border-radius: 10px;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
